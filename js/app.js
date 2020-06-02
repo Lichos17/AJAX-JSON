@@ -43,7 +43,9 @@ traducir.addEventListener('submit', function(e){
                 imagenSrc = 'img/' + traduccion.contents.translation + '.jpg';
                 //Hacemos el template del html
                 resultado.innerHTML = `
-                <img src="${imagenSrc}" alt="photo">
+                <div class="d-flex justify-content-center">
+                    <img src="${imagenSrc}" alt="photo">
+                </div>
                 <p class='d-flex justify-content-center alert alert-secondary'>${textContent}</p>
                 `
             } else{
